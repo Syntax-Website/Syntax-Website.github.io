@@ -49,7 +49,7 @@
                             
                             </head>
                             <body>
-                            <header role="banner" id="fh5co-header"  style = "min-width: 1440px">
+                            <header role="banner" id="fh5co-header">
                             <div class="container">
                             <!-- <div class="row"> -->
                             <nav class="navbar navbar-default">
@@ -73,11 +73,40 @@
                             </div>
                             </header>
                             
-                            <section id="fh5co-home" data-section="home" style="background-image: url(images/maxresdefault.jpg); background-size: cover; min-width: 1440px" data-stellar-background-ratio="0.5">
-                                <img src = "images/dps_logo.png" width="140" class = "logo" style = "float: right;">
-                                    <img src = "images/syntax_logo.png" width="140" class = "logo" style = "float: left;">
+                            <section id="fh5co-home" data-section="home" style="background-image: url(images/maxresdefault.jpg); background-size: cover;" data-stellar-background-ratio="0.5">
+                            	<!--
+		
+								<div class = "logo_column">
+									<img src = "images/dps_logo.png" width="140" class = "logo" style = "float: right;">
+								</div>
+								<div class = "logo_column">
+									<img src = "images/syntax_logo.png" width="140" class = "logo" style = "float: left;">
+								</div>
+							</div>
+						-->
+							<div class = "logo_row">
+								<img src = "images/dps_logo.png" class = "logo" style = "float: right;">
+								<img src = "images/syntax_logo.png" class = "logo" style = "float: left;">
+							</div>
+							<!--
+                                <img src = "images/dps_logo.png" width="140" class = "logo" style = "float: right; padding: none; margin:none">
+                                    <img src = "images/syntax_logo.png" width="140" class = "logo" style = "float: left; padding: none; margin: none;">-->
                                         <div class="gradient"></div>
-                                        <div class="container" style="position: relative;bottom:20%">
+                                        <style>
+                                        	@media all and (max-width: 700px) {
+	                                        	.bottom-fix {
+	                                        		position: relative;
+	                                        		bottom:10%;
+	                                        	}
+	                                        }
+	                                        @media all and (min-width: 700px) {
+	                                        	.bottom-fix {
+	                                        		position: relative;
+	                                        		bottom:20%;
+	                                        	}
+	                                        }
+                                    	</style>
+                                        <div class="container bottom-fix">
                                             <div class="text-wrap">
                                                 <div class="text-inner">
                                                     <div class="row">
@@ -97,7 +126,8 @@
                                                             </div>
                                                             <div class="clearfix visible-sm-block"></div>
                                                             <br><br><br><br><br>
-                                                            <h3 class = "to-animate" style = "font-family: Abrade; color: white">SyntaxProgramming is now the latest added event. Register for the event <a style = "color:black" href = "https://goo.gl/forms/QVmdsmso8GnD7SbD3">here</a>.</h3>
+                                                            <!--
+                                                            <h3 class = "to-animate" style = "font-family: Abrade; color: white">SyntaxProgramming is now the latest added event. Register for the event <a style = "color:black" href = "https://goo.gl/forms/QVmdsmso8GnD7SbD3">here</a>.</h3>-->
                                                         </div>
                                                     </div>
                                                     
@@ -124,11 +154,12 @@
                                             <div class="box-testimony" style = "width: 100%;">
                                                 <blockquote class="to-animate-2">
                                                     <p>&ldquo;
-                                                    DPS International, Saket welcomes you to Syntax V2.0, to be held on 4th August, 2018, providing a platform to express your thinking through different technological aspects. <br>
+
+                                                    DPS International, Saket welcomes you to SYNTAX​ ​v2.0​, to be held on 4th August 2018. This is a platform for you to display your skills through technology. <br>
                                                     
-                                                    In the times we live in, technology plays a vital role in our everyday lives. With every passing day, a new innovation is being brought into the market which serves to advance an already existing software or gadget, these advancements have greatly improved our lives. Technology is increasingly gaining importance in every sector, especially education. The profound effect of technology on students lives cannot be denied.
+                                                    In the times we live in, technology plays a vital role in our everyday lives. With every passing day, a new innovation is being brought into the market which advances an already existing software or gadget. These advancements have greatly improved our lives. Technology is increasingly gaining importance in every sector, especially in education. The profound effect of technology on students lives cannot be denied.
                                                     <br>
-                                                    With firm belief that it is possible to explore new horizons of technology through innovation and practical learning, we take great pleasure in inviting your school to participate in <b>SYNTAX V2.0</b>.
+                                                    With the firm belief that it is possible to explore new horizons of technology through innovation and practical learning, we take great pleasure in inviting your school to participate in <b>SYNTAX V2.0</b>.
                                                     &rdquo;</p>
                                                 </blockquote>
                                                 
@@ -145,7 +176,7 @@
                                 </div>
                             </section>
                             <section id="fh5co-work" data-section="work">
-                                <div class="container" style = "margin-bottom: 0;">
+                                <div class="container">
                                     <div class="row">
                                         <div class="col-md-12 section-heading text-center">
                                             <h2 class="to-animate">Events</h2>
@@ -156,6 +187,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="row row-bottom-padded-sm">
                                         <div class="col-md-4 col-sm-6 col-xxs-12">
                                             <a href = "images/Design.jpg" class="fh5co-project-item image-popup">
@@ -173,6 +205,7 @@
                                                     </div>
                                                     </a>
                                         </div>
+
                                         <div class="col-md-4 col-sm-6 col-xxs-12">
                                             <a href = "images/Photography.jpg" class="fh5co-project-item image-popup to-animate">
                                                 <img src="images/Photography.jpg" alt="Image" class="img-responsive">
@@ -207,6 +240,8 @@
                                                     </div>
                                                     </a>
                                         </div>
+                                        <div class="clearfix visible-sm-block"></div>
+
                                         <div class="col-md-4 col-sm-6 col-xxs-12">
                                             <a href = "images/Presentation.jpg" class="fh5co-project-item image-popup to-animate">
                                                 <img src="images/Presentation.jpg" alt="Image" class="img-responsive">
@@ -242,6 +277,8 @@
                                                     </div>
                                                     </a>
                                         </div>
+                                        <div class="clearfix visible-sm-block"></div>
+
                                         <div class="col-md-4 col-sm-6 col-xxs-12">
                                             <a href = "images/Movie Making.jpg" class="fh5co-project-item image-popup to-animate">
                                                 <img src="images/Movie Making.jpg" alt="Image" class="img-responsive">
@@ -259,6 +296,7 @@
                                         </div>
                                         
                                         <div class="clearfix visible-sm-block"></div>
+
                                         <div class="col-md-4 col-sm-6 col-xxs-12">
                                             <a href = "images/Programming.jpg" class="fh5co-project-item image-popup to-animate">
                                                 <img src="images/Programming.jpg" alt="Image" class="img-responsive">
@@ -274,6 +312,7 @@
                                                     </div>
                                                     </a>
                                         </div>
+                                        <div class="clearfix visible-sm-block"></div>
                                         <div class="col-md-4 col-sm-6 col-xxs-12" >
                                             <a href = "images/Surprise.jpg" class="fh5co-project-item image-popup to-animate">
                                                 <img src="images/Surprise.jpg" alt="Image" class="img-responsive">
@@ -290,9 +329,11 @@
                                                     </div>
                                                     </a>
                                         </div>
-                                        <div class="col-md-4 col-sm-6 col-xxs-12"  style = "visibility: hidden">
-                                            <a href = "images/Movie Making.jpg" class="fh5co-project-item image-popup to-animate">
-                                                <img src="images/Movie Making.jpg" alt="Image" class="img-responsive">
+                                        <div class="clearfix visible-sm-block"></div>
+
+                                        <div class="col-md-4 col-sm-6 col-xxs-12">
+                                            <a href = "images/Gaming.jpg" class="fh5co-project-item image-popup to-animate">
+                                                <img src="images/Gaming.jpg" alt="Image" class="img-responsive">
                                                     <div class="fh5co-text">
                                                         <span>
                                                             <ol>
@@ -305,11 +346,55 @@
                                                     </div>
                                                     </a>
                                         </div>
+                                        <div class="clearfix visible-sm-block"></div>
+                                        <style>
+                                        	@media all and (max-width: 768px) { 
+	                                        	.visibility_fix {
+	                                        		display: none;	
+	                                        	}
+	                                        }
+	                                        @media all and (min-width: 768px) {
+	                                        	.visibility_fix {
+	                                        		visibility: hidden;
+	                                        	}
+	                                        }
+                                    	</style>
+                                        <div class="col-md-4 col-sm-6 col-xxs-12 visibility_fix"> <!--just a placeholder to help fix shit.. no need to edit this block-->
+                                            <a href = "images/Crossword.jpg" class="fh5co-project-item image-popup to-animate">
+                                                <img src="images/Crossword.jpg" alt="Image" class="img-responsive">
+                                                    <div class="fh5co-text">
+                                                        <span>
+                                                            <ol>
+                                                                <li>Number of participants: 4</li>
+                                                                <li>Eligibility: OPEN</li>
+                                                                <li>Students will get the topic/s, duration and other important details on 10th August’ 2017 on the school website.</li>
+                                                                <li>Students need to upload their movie on Youtube and send the link to the Syntax Email Id by 20th August’ 2017 23:59:59 hours. Syntax Email Id: syntax@dpsi.ac.in</li>
+                                                            </ol>
+                                                        </span>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+
+                                        <div class="col-md-4 col-sm-6 col-xxs-12"> 
+                                            <a href = "images/Crossword.jpg" class="fh5co-project-item image-popup to-animate">
+                                                <img src="images/Crossword.jpg" alt="Image" class="img-responsive">
+                                                    <div class="fh5co-text">
+                                                        <span>
+                                                            <ol>
+                                                                <li>Number of participants: 4</li>
+                                                                <li>Eligibility: OPEN</li>
+                                                                <li>Students will get the topic/s, duration and other important details on 10th August’ 2017 on the school website.</li>
+                                                                <li>Students need to upload their movie on Youtube and send the link to the Syntax Email Id by 20th August’ 2017 23:59:59 hours. Syntax Email Id: syntax@dpsi.ac.in</li>
+                                                            </ol>
+                                                        </span>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="clearfix visible-sm-block"></div>
+
                                     </div>
                                     <div class="row" style = "margin-top: -100%">
-                                        <div class="col-md-12 text-center to-animate">
-                                            <p>*DPS International will not be held responsible for any damage to the students personal devices. </p>
-                                        </div>
                                         <form action = "https://goo.gl/forms/QVmdsmso8GnD7SbD3" target="_blank" class="center">
                                             <input class="btn btn-primary btn-lg to-animate" style = "margin-left: 25%; width: 50%; height: 75px" value="Register" type="submit">
                                                 </form>		
@@ -322,7 +407,7 @@
                             
                             
                             
-                            <section id="fh5co-services" data-section="services" style = "min-width: 1440px">
+                            <section id="fh5co-services" data-section="services">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-12 section-heading text-center">
@@ -339,8 +424,8 @@
                                     </div>
                                 </div>
                             </section>
-                            
-                            <section id="fh5co-about" data-section="about" style="min-width: 1440px">
+                            <!--
+                            <section id="fh5co-about" data-section="about">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-12 section-heading text-center">
@@ -457,8 +542,8 @@
                                 </div>
                                 
                             </section>
-                            
-                            <section id="fh5co-contact" data-section="contact" style = "min-width: 1440px">
+                            -->
+                            <section id="fh5co-contact" data-section="contact">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-12 section-heading text-center">
