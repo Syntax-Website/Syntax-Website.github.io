@@ -374,14 +374,14 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0s;
   transition: 0s;
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 800px) {
   .logo_row {
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 }
-@media all and (min-width: 700px) {
+@media all and (min-width: 800px) {
   .logo_row {
     margin-left: 100px;
     margin-right: 100px;
@@ -391,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	top: 10px;
   margin: 0;
-	z-index: 100; 
+	z-index: 3; 
   height: 160px;
 }
 .logo img {
@@ -656,13 +656,14 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2em 0;
   }
   #fh5co-work {
-    padding-bottom: 40em !important;
+    padding-bottom: 30em !important;
   }
 }
 
 #fh5co-services, #fh5co-work, #fh5co-counters {
   padding: 7em 0;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-services, #fh5co-work, #fh5co-counters {
     padding: 4em 0;
@@ -1465,6 +1466,15 @@ min-height: 15em;
 .center {
 	margin: auto;
 	width: 60%;
-	
+  text-align: center;
 }
+@media all and (min-width: 768px) {
+  .margin-left-fix {
+    margin-left: 1.39em;
+  }
+  .margin-right-fix {
+    margin-right: 1.39em;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
